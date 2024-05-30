@@ -45,7 +45,7 @@
 }
 /* For screens smaller than lg */
 @media (max-width: 1023px) {
-  #root {
+  body {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -53,7 +53,7 @@
 
 /* For screens lg and above */
 @media (min-width: 1024px) {
-  #root {
+  body {
     padding-left: 80px !important;
     padding-right: 80px !important;
   }
@@ -61,7 +61,7 @@
 
 /* For screens xl and above */
 @media (min-width: 1280px) {
-  #root {
+  body {
     padding-left: 120px !important;
     padding-right: 120px !important;
   }

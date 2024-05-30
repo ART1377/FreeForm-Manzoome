@@ -107,7 +107,7 @@ const Properties = () => {
 
         {/* content container */}
         <div
-          className={`bg-primary flex flex-col lg:flex-row gap-20 lg:gap-6 lg:justify-between lg:items-center rounded-15 px-16 py-30 mt-30 min-h-[600px] h-auto relative`}
+          className={`bg-primary flex flex-col lg:flex-row gap-20 lg:gap-6 lg:justify-between lg:items-start rounded-15 px-12 py-30 mt-30 min-h-[600px] h-auto relative`}
         >
           {/* images */}
           <div className="absolute left-0 top-5">
@@ -134,15 +134,15 @@ const Properties = () => {
                 {activeTab === 3 && <ShieldNetwork />}
               </div>
               <small className="text-secondary">{tabs[activeTab]}</small>
-              <h2 className="text-white">فضای ذخیره سازی خود را مدیریت کنید</h2>
-              <p className="text-neutral">
+              <h3 className="text-white pe-12">فضای ذخیره سازی خود را مدیریت کنید</h3>
+              <p className="text-neutral pe-12 max-w-[90%]">
                 شما میتوانید با استفاده از ابزار مدیریت فایل فری فرم همه فایل
                 های مورد نیاز پروژه خود را ذخیره کنید و از آنها استفاده کنید.
               </p>
             </div>
 
             {/* left side */}
-            <div className="w-full lg:w-6/12 mb-40 lg:mb-2">
+            <div className="w-full lg:w-6/12 mb-40 lg:mb-2 mt-10">
               <div className="flex flex-col gap-6 bg-[#F7F8FA] rounded-lg p-6 h-[356px] w-[328px] ms-auto relative">
                 {/* safari nav */}
                 <div className="flex items-center gap-6 justify-end">
@@ -401,7 +401,7 @@ const Properties = () => {
                     </div>
 
                     <div className="flex flex-col items-end mt-30 gap-2">
-                      <div className="rounded-15 bg-white shadow-md flex justify-between items-center p-4 min-w-[440px]">
+                      <div className="rounded-15 bg-white shadow-md flex justify-between items-center p-4 min-w-[400px]">
                         <small className="text-primary font-bold">
                           صفحه نخست
                         </small>
@@ -411,7 +411,7 @@ const Properties = () => {
                           <Refresh />
                         </div>
                       </div>
-                      <div className="rounded-15 bg-white shadow-md flex justify-between items-center p-4 min-w-[440px]">
+                      <div className="rounded-15 bg-white shadow-md flex justify-between items-center p-4 min-w-[400px]">
                         <small className="text-primary font-bold">
                           صفحه نخست
                         </small>
@@ -421,7 +421,7 @@ const Properties = () => {
                           <Refresh />
                         </div>
                       </div>
-                      <div className="rounded-15 bg-white shadow-md flex justify-between items-center p-4 min-w-[440px]">
+                      <div className="rounded-15 bg-white shadow-md flex justify-between items-center p-4 min-w-[400px]">
                         <small className="text-primary font-bold">
                           صفحه نخست
                         </small>
@@ -431,7 +431,7 @@ const Properties = () => {
                           <Refresh />
                         </div>
                       </div>
-                      <div className="rounded-15 bg-white shadow-md flex justify-between items-center p-4 min-w-[440px]">
+                      <div className="rounded-15 bg-white shadow-md flex justify-between items-center p-4 min-w-[400px]">
                         <small className="text-primary font-bold">
                           صفحه نخست
                         </small>

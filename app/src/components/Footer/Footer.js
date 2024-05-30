@@ -21,42 +21,35 @@ const Footer = () => {
       </p>
 
       {/* footer contact */}
-      <div className="flex bg-primary-100 text-primary gap-30 p-4 rounded-15 mx-6 flex-col md:flex-row">
-        <div className="flex gap-30 flex-wrap flex-col sm:flex-row">
-          {/* contact item */}
-          <div className="flex items-center gap-2.5 max-w-[336px]">
-            <CallChatRounded />
-            <p className="font-bold text-[18px] min-w-[130px]">
-              مشاوره تلفنی :
-            </p>
-            <small className="text-primary text-[12px]">021-55569833</small>
-          </div>
-          {/* contact item */}
-          <div className="flex items-center gap-2.5 max-w-[336px]">
-            <PhoneCallingRounded />
-            <p className="font-bold text-[18px] min-w-[130px]">شماره تماس : </p>
-            <small className="text-primary text-[12px]">021-55569833</small>
-          </div>
+      <div className="flex flex-wrap w-full bg-primary-100 text-primary gap-15 p-4 rounded-15 mx-2">
+        {/* contact item */}
+        <div className="flex items-center gap-1 max-w-fit">
+          <CallChatRounded />
+          <p className="font-bold text-[18px] min-w-[110px]">مشاوره تلفنی :</p>
+          <small className="text-primary text-[12px]">021-55569833</small>
         </div>
-        <div className="flex gap-30 flex-wrap flex-col sm:flex-row">
-          {/* contact item */}
-          <div className="flex items-center gap-2.5 max-w-[336px]">
-            <Letter />
-            <p className="font-bold text-[18px] min-w-[130px]">
-              پست الکترونیکی :
-            </p>
-            <small className="text-primary text-[12px]">
-              freeform@gmail.com
-            </small>
-          </div>
-          {/* contact item */}
-          <div className="flex items-center gap-2.5 max-w-[336px]">
-            <MapPoint />
-            <p className="font-bold text-[18px] min-w-[65px]">آدرس :</p>
-            <small className="text-primary text-[12px]">
-              خ بهشتی، ما بین یوسفی و صابونچی، پلاک 197، طبقه 7، واحد 25
-            </small>
-          </div>
+        {/* contact item */}
+        <div className="flex items-center gap-1 max-w-fit">
+          <PhoneCallingRounded />
+          <p className="font-bold text-[18px] min-w-[110px]">شماره تماس : </p>
+          <small className="text-primary text-[12px]">021-55569833</small>
+        </div>
+
+        {/* contact item */}
+        <div className="flex items-center gap-1 max-w-fit">
+          <Letter />
+          <p className="font-bold text-[18px] min-w-[130px]">
+            پست الکترونیکی :
+          </p>
+          <small className="text-primary text-[12px]">freeform@gmail.com</small>
+        </div>
+        {/* contact item */}
+        <div className="flex items-center gap-1 max-w-fit">
+          <MapPoint />
+          <p className="font-bold text-[18px] min-w-[55px]">آدرس :</p>
+          <small className="text-primary text-[12px]">
+            خ بهشتی، ما بین یوسفی و صابونچی، پلاک 197، طبقه 7، واحد 25
+          </small>
         </div>
       </div>
       {/* manzoomeh logo */}

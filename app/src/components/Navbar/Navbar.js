@@ -17,7 +17,7 @@ const Navbar = () => {
         <NavbarItem href="#">تماس با ما</NavbarItem>
       </div>
       <div className="flex-none">
-        <button className="bg-primary-100 hover:bg-primary hover:text-white text-primary py-2 px-5 rounded-15">
+        <button className="bg-primary-100 hover:bg-primary hover:text-white transition-colors duration-300 text-primary py-2 px-5 rounded-15">
           حساب کاربری
         </button>
       </div>
