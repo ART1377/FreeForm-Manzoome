@@ -28,7 +28,7 @@ const Design = () => {
   const verticalTabs = ["صفحات", "فرم ها", "فایل ها"];
 
   return (
-    <div className="bg-neutral-100 flex flex-col lg:flex-row gap-3 lg:gap-4 lg:justify-between lg:items-center rounded-15 px-16 py-30 pe-0 min-h-[1600px] lg:min-h-[900px] h-auto relative mt-[150px]">
+    <div className="bg-neutral-100 flex flex-col lg:flex-row gap-3 lg:gap-4 lg:justify-between lg:items-center rounded-15 px-16 py-30 pe-0 min-h-[1500px] lg:min-h-[900px] h-auto relative mt-[150px]">
       <div className="absolute right-0 bottom-0">
         <div className="flex w-[220px] px-30 py-15 gap-4 rounded-15 absolute bottom-40 right-40 bg-gradient-to-br from-white to-transparent filter drop-shadow-xl backdrop-blur-lg items-center">
           <div className="flex flex-col gap-2">
@@ -44,10 +44,10 @@ const Design = () => {
         <div className="size-[90px] rounded-15 bg-primary flex justify-center items-center">
           <Page white />
         </div>
-        <h3 className="text-primary mt-4">
+        <h3 className="text-primary mt-4 pe-12">
           برای پروژه خود به تعداد نامحدود صفحه طراحی کنید{" "}
         </h3>
-        <p className="text-primary">
+        <p className="text-primary pe-12">
           شما برای هر پروژه میتوانید به تعداد نامحدود صفحه طراحی کنید و فرم های
           خود را داخل صفحات فراخوانی کنید و محتوای دلخواه خود را به همراه فرم
           خود بسازید.{" "}
@@ -73,7 +73,7 @@ const Design = () => {
         </div>
 
         <div className="w-full rounded-15 rounded-e-none bg-white p-8 pe-0 h-[430px]">
-          <div className="h-full w-full rounded-15 rounded-e-none border border-dashed border-primary-500 border-e-0 overflow-hidden">
+          <div className="h-full w-full rounded-15 rounded-e-none border border-dashed border-primary-500 border-e-0 overflow-visible">
             {/* icons */}
             <div className="bg-primary h-[58px] flex gap-2.5 p-3">
               <div className="bg-[#F6F6F6] rounded-15 py-3 px-2 flex items-center gap-2 border border-[#E9E9E9]">
@@ -107,13 +107,12 @@ const Design = () => {
               </div>
             </div>
             {/* vertical tab */}
-            <div className="absolute transform -left-12 top-[70%] -translate-y-1/2">
-              {" "}
-              <div className="flex transform -rotate-90  bg-white rounded-15 gap-2.5 p-1.5 shadow-md">
+            <div className="absolute left-[-15%] top-[70%]">
+              <div className="flex transform -rotate-90 bg-white rounded-15 gap-2.5 p-1.5 shadow-sm">
                 {verticalTabs.map((item, index) => (
                   <div
                     key={index}
-                    className={`cursor-pointer text-center rounded-md px-3 py-[5px] flex gap-px items-center transition duration-500 text-primary font-bold text-[12px] relative  ${
+                    className={`cursor-pointer text-center rounded-md px-5 py-2 flex gap-px items-center transition duration-500 text-primary font-bold text-[12px] relative  ${
                       activeVerticalTab === index && !verticalTabIsActive
                         ? "text-secondary bg-primary"
                         : "text-primary bg-white"
@@ -123,7 +122,7 @@ const Design = () => {
                     {item}
                     {activeVerticalTab === index && verticalTabIsActive && (
                       <div
-                        className={`w-full h-full bg-primary z-10 absolute rounded-lg flex justify-center items-center cursor-pointer ${style["custom-shape"]}`}
+                        className={`w-full h-full bg-primary z-10 absolute rounded-lg flex justify-center items-center left-0 cursor-pointer ${style["custom-shape"]}`}
                         onClick={() => setVerticalTabIsActive(false)}
                       >
                         <Close />
@@ -131,7 +130,7 @@ const Design = () => {
                     )}
 
                     {activeVerticalTab === index && !verticalTabIsActive && (
-                      <div className="bg-primary rounded-full size-7 absolute top-15 rounded-tl-2xl rounded-bl-2xl -z-10 transform left-1/2 -translate-x-1/2 text-white rotate-90 flex items-center">
+                      <div className="bg-primary rounded-full size-7 absolute top-[22px] rounded-tl-2xl rounded-bl-2xl -z-10 transform left-1/2 -translate-x-1/2 text-white rotate-90 flex items-center">
                         <small className="">
                           <NavArrowRight />
                         </small>
@@ -141,7 +140,7 @@ const Design = () => {
                 ))}
               </div>
               <div
-                className={`w-[369px] h-[450px] bg-primary shadow-lg rounded-15 absolute left-[117px] -top-[80px] transition-all duration-500 ${
+                className={`w-[369px] h-[450px] bg-primary shadow-lg rounded-15 absolute left-[143px] -top-[110px] transition-all duration-500 ${
                   verticalTabIsActive
                     ? ""
                     : "transform -translate-x-[1000px] opacity-0 !h-0"

@@ -172,12 +172,12 @@ const Properties = () => {
 
                 {/* file manager content */}
                 {tabs[activeTab] === "مدیریت فایل" && (
-                  <div className="absolute transform -left-12 top-1/2 -translate-y-1/2">
+                  <div className="relative left-[-120px] top-[120px]">
                     <div className="flex transform -rotate-90  bg-white rounded-15 gap-2.5 p-1.5">
                       {verticalTabs.map((item, index) => (
                         <div
                           key={index}
-                          className={`cursor-pointer text-center rounded-md px-3 py-[5px] flex gap-px items-center transition duration-500 text-primary font-bold text-[12px] relative ${
+                          className={`cursor-pointer text-center rounded-md px-5 py-2 flex gap-px items-center transition duration-500 text-primary font-bold text-[12px] relative ${
                             activeVerticalTab === index && !verticalTabIsActive
                               ? "text-secondary bg-primary"
                               : "text-primary bg-white"
@@ -188,7 +188,7 @@ const Properties = () => {
                           {activeVerticalTab === index &&
                             verticalTabIsActive && (
                               <div
-                                className={`w-full h-full bg-primary z-10 absolute rounded-lg flex justify-center items-center cursor-pointer ${style["custom-shape"]}`}
+                                className={`w-full h-full bg-primary z-10 absolute rounded-lg flex justify-center items-center left-0 cursor-pointer ${style["custom-shape"]}`}
                                 onClick={() => setVerticalTabIsActive(false)}
                               >
                                 <Close />
@@ -197,7 +197,7 @@ const Properties = () => {
 
                           {activeVerticalTab === index &&
                             !verticalTabIsActive && (
-                              <div className="bg-primary rounded-full size-7 absolute top-15 rounded-tl-2xl rounded-bl-2xl -z-10 transform left-1/2 -translate-x-1/2 text-white rotate-90 flex items-center">
+                              <div className="bg-primary rounded-full size-7 absolute top-[22px] rounded-tl-2xl rounded-bl-2xl -z-10 transform left-1/2 -translate-x-1/2 text-white rotate-90 flex items-center">
                                 <small className="">
                                   <NavArrowRight />
                                 </small>
@@ -209,7 +209,7 @@ const Properties = () => {
 
                     {/* vertical tab content */}
                     <div
-                      className={`w-[369px] h-[450px] bg-primary shadow-lg rounded-15 absolute left-[117px] -top-[80px] transition-all duration-500 ${
+                      className={`w-[369px] h-[450px] bg-primary shadow-lg rounded-15 absolute left-[155px] -top-[120px] transition-all duration-500 ${
                         verticalTabIsActive
                           ? ""
                           : "transform -translate-x-[1000px] opacity-0 !h-0"
