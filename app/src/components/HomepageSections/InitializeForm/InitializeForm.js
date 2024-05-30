@@ -20,7 +20,7 @@ const InitializeForm = () => {
 
       <div className="relative">
         <img src="images/Section2Image.png" alt="shape" />
-        <div className="flex flex-col gap-6 bg-white rounded-lg p-4 w-6/12 min-w-[440px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="flex flex-col gap-6 bg-white rounded-lg p-4 w-6/12 min-w-[480px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex items-center">
             <div className="w-[133px] h-6 pl-10 pr-[41px] bg-blue-600 rounded-15 justify-center items-center inline-flex mx-auto">
               <div className="text-center text-white text-[10px]">VS Code</div>
@@ -32,11 +32,51 @@ const InitializeForm = () => {
             </div>
           </div>
           <div className="text-end bg-[#F7F9FC] p-4 rounded-15">
-            {` <form action="https://formcarry.com/s/{Your Form ID}" method="POST" enctype="multipart/form-data">
+            {/* {` <form action="https://formcarry.com/s/{Your Form ID}" method="POST" enctype="multipart/form-data">
             <input type="email" name="email">
             <textarea name="message"></textarea>
             <button type="submit">Submit</button>
-            </form>`}
+            </form>`} */}
+            <small className="text-primary !text-left">
+              <small className="text-primary !text-left">{`< `}</small>
+              <small className="text-primary !text-left">{`form `}</small>
+              <small className="text-green-600 !text-left">{`action="`}</small>
+              <small className="text-red-600 !text-left">
+                {`https://formcarry.com/s/{Your Form ID} `}
+              </small>
+              <small className="text-green-600 !text-left">{`"`}</small>
+              <small className="text-green-600 !text-left">{`method="`}</small>
+              <small className="text-red-600 !text-left">{`POST`}</small>
+              <small className="text-green-600 !text-left">{`"`}</small>
+              <small className="text-green-600 !text-left">{`"`}</small>
+              <small className="text-green-600 !text-left">{`enctype="`}</small>
+              <small className="text-red-600 !text-left">{`multipart/form-data `}</small>
+              <div className="me-6 mb-4">
+                {` <input`}
+                <small className="text-green-600 !text-left">{`type="`}</small>
+                <small className="text-red-600 !text-left">{`email`}</small>
+                <small className="text-green-600 !text-left">{`"`}</small>
+                <small className="text-green-600 !text-left">{`name="`}</small>
+                <small className="text-red-600 !text-left">{`email`}</small>
+                <small className="!text-green-600 !text-left">{`">`}</small>
+              </div>
+              <div className="me-6">
+                {` <textarea >`}
+                <small className="text-green-600 !text-left">{`name="`}</small>
+                <small className="text-red-600 !text-left">{`message`}</small>
+                <small className="text-green-600 !text-left">{`"`}</small>
+                {` </textarea>`}
+              </div>
+              <div className="me-6">
+                {` <button >`}
+                <small className="text-green-600 !text-left">{`type="`}</small>
+                <small className="text-red-600 !text-left">{`submit`}</small>
+                <small className="text-green-600 !text-left">{`">`}</small>
+                {` Submit`}
+                {` </button> `}
+              </div>
+              <small className="text- !text-left block">{`</form>`}</small>
+            </small>
             <div className="flex justify-center mt-4 mb-2">
               <Button icon={<NotesMinimalistic />}>کپی کردن</Button>
             </div>
