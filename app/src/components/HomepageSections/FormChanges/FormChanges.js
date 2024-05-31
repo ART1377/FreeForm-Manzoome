@@ -67,13 +67,18 @@ const FormChanges = () => {
             <h6 className="text-primary">تاریخچه فرم</h6>
             <div className="flex gap-5 items-center">
               <div
-                className={`transition-all duration-500 ${
+                className={`transition-all duration-700 relative ${
                   openAccordion !== null
                     ? "transform -translate-y-[200px] opacity-0"
                     : "transform translate-y-0"
                 }`}
               >
                 <Button icon={<Plain />}>کلیک کنید</Button>
+                <img
+                  src="images/gif.gif"
+                  alt=""
+                  className="size-8 mt-auto ms-3 absolute left-0 top-[120%]"
+                />
               </div>
               <div className="bg-[#E9E9E9] rounded-15 px-3 p-2 flex justify-between items-center min-w-[200px]">
                 <small className="text-primary">فرم مشاوره</small>

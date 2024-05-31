@@ -26,13 +26,13 @@ const Footer = () => {
         <div className="flex items-center gap-1 max-w-fit">
           <CallChatRounded />
           <p className="font-bold text-[18px] min-w-[110px]">مشاوره تلفنی :</p>
-          <small className="text-primary text-[12px]">021-55569833</small>
+          <small className="text-primary text-[12px] max-w-[180px]">021-55569833</small>
         </div>
         {/* contact item */}
         <div className="flex items-center gap-1 max-w-fit">
           <PhoneCallingRounded />
           <p className="font-bold text-[18px] min-w-[110px]">شماره تماس : </p>
-          <small className="text-primary text-[12px]">021-55569833</small>
+          <small className="text-primary text-[12px] max-w-[180px]">021-55569833</small>
         </div>
 
         {/* contact item */}
@@ -41,13 +41,13 @@ const Footer = () => {
           <p className="font-bold text-[18px] min-w-[130px]">
             پست الکترونیکی :
           </p>
-          <small className="text-primary text-[12px]">freeform@gmail.com</small>
+          <small className="text-primary text-[12px] max-w-[180px]">freeform@gmail.com</small>
         </div>
         {/* contact item */}
         <div className="flex items-center gap-1 max-w-fit">
           <MapPoint />
           <p className="font-bold text-[18px] min-w-[55px]">آدرس :</p>
-          <small className="text-primary text-[12px]">
+          <small className="text-primary text-[12px] max-w-[180px]">
             خ بهشتی، ما بین یوسفی و صابونچی، پلاک 197، طبقه 7، واحد 25
           </small>
         </div>

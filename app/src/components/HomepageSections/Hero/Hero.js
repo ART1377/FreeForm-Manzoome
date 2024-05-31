@@ -39,10 +39,12 @@ const Hero = () => {
         <div className="absolute -top-5 h-20 w-5/12 min-w-[380px]">
           <CreateProjectInput />
         </div>
-        <div className="flex flex-col gap-6 bg-[#F7F8FA] rounded-lg p-6 w-6/12 min-w-[440px] sm:min-w-[500px] absolute top-[70%]">
-          <Button css={"absolute -right-[15%] top-5"}>
-            بکشید و رها کنید ✨
-          </Button>
+        <div className="flex flex-col gap-8 bg-[#F7F8FA] rounded-lg p-6 w-6/12 min-w-[440px] sm:min-w-[500px] absolute top-[70%]">
+          <div className="absolute -right-[15%] top-5 flex">
+
+          <Button css={""}>بکشید و رها کنید ✨</Button>
+          <img src="images/gif.gif" alt="" className="size-8 mt-auto ms-3" />
+          </div>
           <div className="flex items-center gap-16 justify-end">
             <div className="w-[133px] h-6 pl-10 pr-[41px] bg-primary-100 rounded-15 justify-center items-center inline-flex">
               <div className="text-center text-primary text-[10px]">
